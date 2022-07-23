@@ -25,13 +25,12 @@ public class UrlController {
     }
 
     @PostMapping("/transform2short")
-    public String transformToShort(@RequestBody String longURL){
-        return transformService.longToShort(longURL);
+    public String transformToShort(@RequestBody String longUrl){
+        return transformService.longToShort(longUrl);
     }
 
     @PostMapping("/transform2long")
-    public String transformToLong(@RequestBody String shortURL){
-        return transformService.shortToLong(shortURL);
+    public String transformToLong(@RequestBody String shortUrl){
+        return transformService.shortToLong(shortUrl);
     }
-
 }
